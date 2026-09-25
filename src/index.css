@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f7f9ff;
+  --color-surface-dim: #d7dadf;
+  --color-surface-bright: #f7f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f9;
+  --color-surface-container: #ebeef3;
+  --color-surface-container-high: #e5e8ee;
+  --color-surface-container-highest: #e0e3e8;
+  --color-on-surface: #181c20;
+  --color-on-surface-variant: #42474d;
+  --color-inverse-surface: #2d3135;
+  --color-inverse-on-surface: #eef1f6;
+  --color-outline: #72787e;
+  --color-outline-variant: #c2c7ce;
+  --color-surface-tint: #376283;
+  
+  --color-primary: #0c405e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2b5777;
+  --color-on-primary-container: #a2ccf1;
+  --color-inverse-primary: #a1cbf0;
+  --color-primary-fixed: #cbe6ff;
+  --color-primary-fixed-dim: #a1cbf0;
+  --color-on-primary-fixed: #001e30;
+  --color-on-primary-fixed-variant: #1c4a6a;
+
+  --color-secondary: #35675f;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #b8ede3;
+  --color-on-secondary-container: #3b6d65;
+  --color-secondary-fixed: #b8ede3;
+  --color-secondary-fixed-dim: #9dd1c7;
+  --color-on-secondary-fixed: #00201c;
+  --color-on-secondary-fixed-variant: #1a4f47;
+
+  --color-tertiary: #5d3100;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #7e4500;
+  --color-on-tertiary-container: #ffb97b;
+  --color-tertiary-fixed: #ffdcc1;
+  --color-tertiary-fixed-dim: #ffb778;
+  --color-on-tertiary-fixed: #2e1500;
+  --color-on-tertiary-fixed-variant: #6c3a00;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-sans: 'Plus Jakarta Sans', 'Mukta Malar', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+}
+
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 8px);
+}
+
+/* Easy View accessibility mode */
+body.easy-view-active {
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+body.easy-view-active h1,
+body.easy-view-active h2,
+body.easy-view-active h3 {
+  letter-spacing: 0.01em;
+}
+
+body.easy-view-active button {
+  min-height: 64px !important;
+}
+
+/* Custom scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}

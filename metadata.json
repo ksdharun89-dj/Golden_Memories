@@ -1,0 +1,6 @@
+{
+  "name": "Golden Memories - Gentle Cognitive Care & Activities",
+  "description": "A calm, dignified cognitive care and memory companion designed for seniors and their family caregivers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
